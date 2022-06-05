@@ -1,0 +1,76 @@
+.ticket{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.ticket .tickethead{
+    margin: 20px 0px 0px 0px;
+}
+.tickethead p{
+    color: rgba(255, 71, 58, 1);
+    font-size: 15px;
+}
+.tickethead h1{
+    font-size: 30px;
+}
+
+.ticket .persons{
+    margin: 20px 0px 0px  0px;
+}
+.ticket .persons div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px 20px 0px;
+}
+.ticket .persons div span:nth-child(odd){
+    border: 1px solid rgba(0, 0, 0, 0.474);
+    color: rgba(0, 0, 0, 0.474) ;
+    margin: 0px 10px;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticket .purchase .line{
+    background-color: rgba(255, 71, 58, 1);
+    border: 1px solid rgba(255, 71, 58, 1);
+    height: 3px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+.ticket .purchase .total{
+    display: flex;
+    justify-content: space-between;
+}
+.ticket .purchase .totalbut{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}
+.ticket .datepick .pick{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.datepick  .pick div{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.372);
+    padding: 5px 5px;
+    transition: 0.5s;
+}
+.datepick .pick div:nth-child(2){
+    border-bottom: 2px solid rgba(255, 71, 58, 1);
+}
+.datepick .date{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}

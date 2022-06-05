@@ -1,0 +1,76 @@
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.navigate{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 1024px;
+    margin: 0px 5px;
+    background-color: rgb(0, 0, 0,0);
+}
+.navigate .logo p{
+    margin-top: 5px;
+}
+.navigate ul{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.navigate ul li{
+    list-style-type: none;
+}
+.navigate .menu{
+    display: none;
+    align-items: center;
+}
+.menu .bars{
+    font-size: 22px;
+}
+.slider{
+    width: 0%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(255, 71, 58, 1);
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 0px 0px;
+    z-index: 1000;
+}
+.slideitem{
+    display: none;
+    margin: 20px 0px 30px 20px;
+    align-items: center;
+}
+.slideitem input{
+    border: 1px solid white;
+    background-color: rgba(0,0,0,0);
+    width: 200px;
+    height: 30px;
+    padding: 5px 0px 5px 20px;
+    color: white;
+}
+.slideitem input::placeholder{
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.slideitem span{
+    color: white;
+    font-size: 20px;
+}
+.slider a{
+    text-decoration: none;
+}
+.slideicon{
+    color: white;
+    margin: 0px 20px 0px 0px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+@media (max-width:800px) {
+    .navigate ul{ display: none; }
+    .navigate .menu{ display: flex;   }
+}

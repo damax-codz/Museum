@@ -1,0 +1,53 @@
+.member .topimage{
+    width: 100%;
+    position: relative;
+}
+.topimage img{
+    width: 100%;
+    height: 300px;
+}
+.topimage p{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 200px; 
+    margin-left: 10px;
+    position: absolute;
+}
+
+.choose{
+    margin: 20px 0px 0px 10px;
+    font: 15px;
+    color: rgba(0, 0, 0, 0.508);
+}
+.member .memberstatus{
+    margin: 30px 0px 0px 10px;
+}
+.member .memberstatus div{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 10px 0px 10px 0px;
+}
+.member .memberstatus div span{
+    font-size: 22px;
+    font-weight:500 ;
+    line-height: 20px;
+}
+.member .memberstatus div span p{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.508);
+    margin: 0%;
+}
+.member .memberstatus div>p{
+    font-size: 30px;
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 0.508);
+
+}
+.member .memberbut{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px 20px 0px;
+}

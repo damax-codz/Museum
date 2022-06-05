@@ -1,0 +1,40 @@
+.collection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.collection .search{
+    width: 95%;
+}
+.collection .search input{
+    width: 100%;
+    margin-top: 10px;
+    height: 45px;
+    background-color: white;
+    border: 1px solid rgba(255, 71, 58, 1);
+    padding-left: 10px;
+}
+.collection .search input::placeholder{
+    color: rgba(255, 71, 58, 1);
+}
+.collection .artcollection div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.collection .artcollection div img{
+    width: 95%;
+}
+.collection .artcollection div p{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 71, 58, 1) ;
+    width: 100%;
+}
+.collection .artcollection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 95%;
+    margin-top: 40px;
+}

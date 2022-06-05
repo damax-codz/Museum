@@ -1,23 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import Login from './components/login/login';
+import Nav from './components/Navbar/Nav';
+import Home from './components/home/Home';
+import Shop from './components/shop/Shop';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Collection from './components/collection/Collection';
+import Ticket from './components/ticket/Ticket';
+import Member from './components/member/Member';
+import { BrowserRouter, Routes , Route } from 'react-router-dom'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/Museum/' element={<Login/>} />
+      <Route path='/Museum/home' element={<Home/>} />
+      <Route path='/Museum/shop' element={<Shop/>} />
+      <Route path='/Museum/collection' element={<Collection/>} />
+      <Route path='/Museum/ticket' element={<Ticket/>} />
+      <Route path='/Museum/member' element={<Member/>} />
+    </Routes>
+    
+    </BrowserRouter>
     </div>
   );
 }
