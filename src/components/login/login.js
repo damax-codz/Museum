@@ -3,14 +3,11 @@ import './login.css'
 import { motion } from "framer-motion"
 import blur from '../images/Background Image.png'
 import Button from '../button/Button'
+import { Link } from 'react-router-dom'
 
 
 const Login = () => {
 
-
-  function Login(){
-     window.location='/Museum/home'
-  }
 
 
 
@@ -25,7 +22,9 @@ const Login = () => {
                 <input type='password' placeholder='Password' />
                 <p>Forgot your password?</p>
                 <div onClick={Login}>
+                 <Link to='/Museum/home'>
                 <Button name='Log In' /> 
+                  </Link>
                 </div>
                 <span>Dont have an account ?</span>
             </div>
