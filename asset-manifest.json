@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Museum/static/css/main.da89389d.css",
+    "main.js": "/Museum/static/js/main.c391f6f4.js",
+    "static/js/787.aebcff10.chunk.js": "/Museum/static/js/787.aebcff10.chunk.js",
+    "static/media/Background Image.png": "/Museum/static/media/Background Image.aacca167b5c29487995b.png",
+    "static/media/Image.png": "/Museum/static/media/Image.f51fdc96d634375ebec2.png",
+    "static/media/fruit.png": "/Museum/static/media/fruit.3b42d2a1c2fdc7c26272.png",
+    "static/media/Rectangle 8.png": "/Museum/static/media/Rectangle 8.9d599e03f2f1614bc047.png",
+    "static/media/art2.png": "/Museum/static/media/art2.7b417b4d6f78def5cc13.png",
+    "static/media/art4.png": "/Museum/static/media/art4.de0626c9d9772a11264b.png",
+    "static/media/shirt.jpg": "/Museum/static/media/shirt.acf2e0792e29bf396c0b.jpg",
+    "static/media/art6.png": "/Museum/static/media/art6.a88719d351c56ee529c1.png",
+    "static/media/art5.png": "/Museum/static/media/art5.f15e01acd80ba9c50e85.png",
+    "static/media/chain.jpg": "/Museum/static/media/chain.d542aa60c7de0817c2ae.jpg",
+    "static/media/art3.png": "/Museum/static/media/art3.b920aca74bfb72681988.png",
+    "static/media/art1.jpg": "/Museum/static/media/art1.0804ebed462736092eae.jpg",
+    "static/media/logo.svg": "/Museum/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Museum/index.html",
+    "main.da89389d.css.map": "/Museum/static/css/main.da89389d.css.map",
+    "main.c391f6f4.js.map": "/Museum/static/js/main.c391f6f4.js.map",
+    "787.aebcff10.chunk.js.map": "/Museum/static/js/787.aebcff10.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da89389d.css",
+    "static/js/main.c391f6f4.js"
+  ]
+}
