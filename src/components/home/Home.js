@@ -5,6 +5,7 @@ import musuem from './../images/Image.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClockFour, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import Button from '../button/Button'
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -24,7 +25,7 @@ const Home = () => {
         <h3>MASTERS <br></br>OLD AND<br></br>NEW</h3>
         <h4>APRIL 15 -  SEPTEMBER 20</h4>
         <p>FLOOR 5</p>
-        <div className='homebut' onClick={Visit}>
+        <div className='homebut' >
           <Link to='/Museum/ticket'>
         <Button name='Plan Your Visit' />
           </Link>
