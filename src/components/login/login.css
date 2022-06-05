@@ -29,7 +29,7 @@
     margin: 0%;
 }
 .login .form div input {
-    width: 100%;
+    width: 300px;
     height: 35px;
     margin: 0px 0px 3px 0px ;
 }
@@ -38,7 +38,9 @@
     margin: 30px 0px 10px 0px;
 }
 
-
+.login a{
+    text-decoration: none;
+}
 
 
 @media (max-width:800px) {

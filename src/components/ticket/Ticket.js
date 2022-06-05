@@ -137,7 +137,7 @@ const Ticket = () => {
             <div className='line'></div>
             <div className='total'>
                 <h4>Total</h4>
-                <span>${(40*adult)+(30*senior)+(25*student)}</span>
+                <h4>${(40*adult)+(30*senior)+(25*student)}</h4>
             </div>
             <div className="totalbut">
                 <Button name="Continue To Payment" />
