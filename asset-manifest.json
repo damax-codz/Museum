@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Museum/static/css/main.da89389d.css",
-    "main.js": "/Museum/static/js/main.c391f6f4.js",
+    "main.js": "/Museum/static/js/main.cebfbc97.js",
     "static/js/787.aebcff10.chunk.js": "/Museum/static/js/787.aebcff10.chunk.js",
     "static/media/Background Image.png": "/Museum/static/media/Background Image.aacca167b5c29487995b.png",
     "static/media/Image.png": "/Museum/static/media/Image.f51fdc96d634375ebec2.png",
@@ -18,11 +18,11 @@
     "static/media/logo.svg": "/Museum/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Museum/index.html",
     "main.da89389d.css.map": "/Museum/static/css/main.da89389d.css.map",
-    "main.c391f6f4.js.map": "/Museum/static/js/main.c391f6f4.js.map",
+    "main.cebfbc97.js.map": "/Museum/static/js/main.cebfbc97.js.map",
     "787.aebcff10.chunk.js.map": "/Museum/static/js/787.aebcff10.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.da89389d.css",
-    "static/js/main.c391f6f4.js"
+    "static/js/main.cebfbc97.js"
   ]
 }
