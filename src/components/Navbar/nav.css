@@ -21,6 +21,16 @@
 .navigate ul li{
     list-style-type: none;
 }
+.navigate ul a{
+    color:  black;
+    text-decoration: none;
+    transition: 0.5s;
+    margin: 0px 10px 0px 10px;
+    font-size: 15px;
+}
+.navigate ul a:hover{
+    color: #FF473A;
+}
 .navigate .menu{
     display: none;
     align-items: center;

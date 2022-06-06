@@ -37,11 +37,12 @@ const Nav = (props) => {
     <div className='navigate'>
         <span className='logo'><p>THE ART MUSEUM</p></span>
         <ul>
-            <li>Events</li>
-            <li>Artist</li>
-            <li>Collections</li>
-            <li>Member</li>
-            <li>Shop</li>
+        <Link to='/Museum/home'>  <li>Events</li> </Link>
+        <Link to='/Museum/cart'>  <li>Cart</li> </Link>
+        <Link to='/Museum/collection'>  <li>Collections</li> </Link>
+        <Link to='/Museum/ticket'>  <li>Plan</li> </Link>
+        <Link to='/Museum/member'> <li>Member</li> </Link>
+        <Link to='/Museum/shop'>  <li>Shop</li> </Link>
         </ul>
         <div className='menu' onClick={Slide} set>
         <FontAwesomeIcon icon={faBars}  className='bars'/>

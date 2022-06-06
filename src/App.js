@@ -9,6 +9,7 @@ import Collection from './components/collection/Collection';
 import Ticket from './components/ticket/Ticket';
 import Member from './components/member/Member';
 import { BrowserRouter, Routes , Route } from 'react-router-dom'
+import Cart from './components/Cart/Cart';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Route path='/Museum/collection' element={<Collection/>} />
       <Route path='/Museum/ticket' element={<Ticket/>} />
       <Route path='/Museum/member' element={<Member/>} />
+      <Route path='/Museum/cart' element={<Cart/>} />
     </Routes>
     
     </BrowserRouter>

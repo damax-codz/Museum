@@ -64,6 +64,7 @@
     color: rgba(0, 0, 0, 0.372);
     padding: 5px 5px;
     transition: 0.5s;
+    cursor: pointer;
 }
 .datepick .pick div:nth-child(2){
     border-bottom: 2px solid rgba(255, 71, 58, 1);

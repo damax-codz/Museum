@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "../Navbar/Nav";
 import "./shop.css";
 import Carousel from "react-bootstrap/Carousel";
@@ -9,28 +9,42 @@ import Button from "../button/Button";
 
 
 const Shop = () => {
-    const [ watchNum,setWatchNum ]  = useState(0)
-    const [ shirtNum,setShirtNum ]  = useState(0)
-    const [ chainNum,setChainNum ]  = useState(0)
+    const [ item1,setWatchNum ]  = useState(0)
+    const [ item2,setShirtNum ]  = useState(0)
+    const [ item3,setChainNum ]  = useState(0)
+    const [ Cart , setCart ] = useState({})
     
     function IncreaseWatch(){
-        setWatchNum(watchNum + 1)
+        setWatchNum(item1 + 1)
     }
     function DecreaseWatch(){
-        setWatchNum(watchNum - 1)
+        setWatchNum(item1 - 1)
     }
     function IncreaseShirt(){
-        setShirtNum(shirtNum + 1)
+        setShirtNum(item2 + 1)
     }
     function DecreaseShirt(){
-        setShirtNum(shirtNum - 1)
+        setShirtNum(item2 - 1)
     }
     function IncreaseChain(){
-        setChainNum(chainNum + 1)
+        setChainNum(item3 + 1)
     }
     function DecreaseChain(){
-        setChainNum(chainNum - 1)
+        setChainNum(item3 - 1)
     }
+
+
+    function AddCart(e){
+      setCart({
+        ...Cart,
+        [e.target.id] : e.target.className
+      })
+
+
+    }
+    useEffect(()=>{
+      sessionStorage.setItem('cartItems',JSON.stringify({...Cart}))
+    },[Cart])
 
 
    return (
@@ -39,7 +53,7 @@ const Shop = () => {
 
       <div className="shop">
         <section className="imageslide">
-          <Carousel indicators={false} controls={false}>
+          <Carousel indicators={false} controls={false} interval={3000}>
             <Carousel.Item>
               <img className="d-block w-100" src={watch} alt="First slide" />
               <h3>Braun Classic Watch</h3>
@@ -56,12 +70,12 @@ const Shop = () => {
                 </span>
                 <div>
                   <span onClick={DecreaseWatch}>-</span>
-                  <span>{watchNum}</span>
+                  <span>{item1}</span>
                   <span onClick={IncreaseWatch}>+</span>
                 </div>
               </div>
-              <div className="shopbut">
-                <Button name="Add to Cart"   />
+              <div className="shopbut" >
+                <Button name="Add to Cart" func={AddCart} total={item1}  id='item1'  />
               </div>
             </Carousel.Item>
 
@@ -81,12 +95,12 @@ const Shop = () => {
                 </span>
                 <div>
                   <span onClick={DecreaseShirt}>-</span>
-                  <span>{shirtNum}</span>
+                  <span>{item2}</span>
                   <span onClick={IncreaseShirt}>+</span>
                 </div>
               </div>
-              <div className="shopbut">
-                <Button name="Add to Cart" />
+              <div className="shopbut"  >
+                <Button name="Add to Cart" func={AddCart} total={item2} id='item2' />
               </div>
             </Carousel.Item>
 
@@ -106,12 +120,12 @@ const Shop = () => {
                 </span>
                 <div>
                   <span onClick={DecreaseChain}>-</span>
-                  <span>{chainNum}</span>
+                  <span>{item3}</span>
                   <span onClick={IncreaseChain}>+</span>
                 </div>
               </div>
-              <div className="shopbut">
-                <Button name="Add to Cart" />
+              <div className="shopbut" >
+                <Button name="Add to Cart" id='item3' total={item3}  func={AddCart} />
               </div>
             </Carousel.Item>
           </Carousel>
