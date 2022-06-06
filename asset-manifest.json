@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Museum/static/css/main.7dc5fdae.css",
-    "main.js": "/Museum/static/js/main.2d5dfa7a.js",
+    "main.css": "/Museum/static/css/main.906e9297.css",
+    "main.js": "/Museum/static/js/main.72ccd7ee.js",
     "static/js/787.aebcff10.chunk.js": "/Museum/static/js/787.aebcff10.chunk.js",
     "static/media/Background Image.png": "/Museum/static/media/Background Image.aacca167b5c29487995b.png",
     "static/media/Image.png": "/Museum/static/media/Image.f51fdc96d634375ebec2.png",
@@ -17,12 +17,12 @@
     "static/media/art1.jpg": "/Museum/static/media/art1.0804ebed462736092eae.jpg",
     "static/media/logo.svg": "/Museum/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Museum/index.html",
-    "main.7dc5fdae.css.map": "/Museum/static/css/main.7dc5fdae.css.map",
-    "main.2d5dfa7a.js.map": "/Museum/static/js/main.2d5dfa7a.js.map",
+    "main.906e9297.css.map": "/Museum/static/css/main.906e9297.css.map",
+    "main.72ccd7ee.js.map": "/Museum/static/js/main.72ccd7ee.js.map",
     "787.aebcff10.chunk.js.map": "/Museum/static/js/787.aebcff10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7dc5fdae.css",
-    "static/js/main.2d5dfa7a.js"
+    "static/css/main.906e9297.css",
+    "static/js/main.72ccd7ee.js"
   ]
 }
