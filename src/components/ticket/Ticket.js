@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from '../button/Button'
 import Nav from '../Navbar/Nav'
 import './ticket.css' 
@@ -7,7 +7,10 @@ const Ticket = () => {
     const [ adult,setAdult ]  = useState(0)
     const [ senior,setSenior ]  = useState(0)
     const [ student,setStudent ]  = useState(0)
-    const [ date,setDate ] = useState(22)
+    const [ date,setDate ] = useState(day)
+
+    let dat = new Date()
+    let day = dat.getDate()
 
     function increaseAdult(){
         setAdult( adult+1 )
@@ -85,6 +88,9 @@ const Ticket = () => {
     }
     
 
+    // useEffect(()=>
+    //     console.log(dat)   
+    // )
 
 
   return (

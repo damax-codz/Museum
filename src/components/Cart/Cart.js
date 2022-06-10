@@ -5,6 +5,8 @@ import watch from "./../images/Rectangle 8.png";
 import shirt from "./../images/shirt.jpg"
 import chain from "./../images/chain.jpg"
 import Button from '../button/Button';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 
 const Cart = () => {
@@ -38,17 +40,28 @@ const Cart = () => {
     let goods = keys.map((item,index)=>   
     goodsSum+=Number(cartData[item])
     )
+
+   
     useEffect(()=>{
-        console.log(cartData);
+      sessionStorage.setItem('cartItems',JSON.stringify({...Cart}))
+      console.log(cartData);
+        return ()=>{
+      sessionStorage.setItem('cartItems',JSON.stringify({...cartData}))
+        }
         
-    })
+    },[cartData])
   return (
       <>
       <Nav />
 
 
     <div className='cart'>
-        <h2 className='text-left ms-2 mt-5 fs-1 fw-bold' >My order</h2>
+       <div className='order'>
+            <h2 className=' ms-2 mt-5 fs-1 fw-bold' >My order</h2>
+            {/* <span onClick={Clear}>
+            <FontAwesomeIcon icon={faTrashCan} className='trash'/>
+            </span> */}
+        </div>
        <div className='cartcontainer'>
 
         {

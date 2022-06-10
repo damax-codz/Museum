@@ -12,7 +12,7 @@ const Shop = () => {
     const [ item1,setWatchNum ]  = useState(0)
     const [ item2,setShirtNum ]  = useState(0)
     const [ item3,setChainNum ]  = useState(0)
-    const [ Cart , setCart ] = useState({})
+    const [ Cart , setCart ] = useState({ })
     
     function IncreaseWatch(){
         setWatchNum(item1 + 1)
@@ -24,7 +24,7 @@ const Shop = () => {
         setShirtNum(item2 + 1)
     }
     function DecreaseShirt(){
-        setShirtNum(item2 - 1)
+      setShirtNum(item2 - 1)
     }
     function IncreaseChain(){
         setChainNum(item3 + 1)
@@ -44,6 +44,10 @@ const Shop = () => {
     }
     useEffect(()=>{
       sessionStorage.setItem('cartItems',JSON.stringify({...Cart}))
+      return ()=> {
+      sessionStorage.setItem('cartItems',JSON.stringify({...Cart}))
+      console.log(Cart);
+      }
     },[Cart])
 
 
@@ -55,7 +59,11 @@ const Shop = () => {
         <section className="imageslide">
           <Carousel indicators={false} controls={false} interval={3000}>
             <Carousel.Item>
+              <div className="flexer">
+
               <img className="d-block w-100" src={watch} alt="First slide" />
+              <div>
+
               <h3>Braun Classic Watch</h3>
               <p>
                 This Braun Classic Watch This Braun watch is a reissue of the
@@ -77,10 +85,16 @@ const Shop = () => {
               <div className="shopbut" >
                 <Button name="Add to Cart" func={AddCart} total={item1}  id='item1'  />
               </div>
+             </div>
+              </div>
             </Carousel.Item>
 
             <Carousel.Item>
+            <div className="flexer">
+              
               <img className="d-block w-100" src={shirt}  alt="First slide" />
+              <div>
+
               <h3>The Badagry Art </h3>
               <p>
                 This Braun Classic Watch This Braun watch is a reissue of the
@@ -102,10 +116,16 @@ const Shop = () => {
               <div className="shopbut"  >
                 <Button name="Add to Cart" func={AddCart} total={item2} id='item2' />
               </div>
+              </div>
+              </div>
             </Carousel.Item>
 
             <Carousel.Item>
+            <div className="flexer">
+
               <img className="d-block w-100" src={chain}  alt="First slide" />
+              <div>
+
               <h3>Queen Victoria Bracelet </h3>
               <p>
                  ThisQueen Victoria Bracelet is a reissue of the
@@ -126,6 +146,8 @@ const Shop = () => {
               </div>
               <div className="shopbut" >
                 <Button name="Add to Cart" id='item3' total={item3}  func={AddCart} />
+              </div>
+              </div>
               </div>
             </Carousel.Item>
           </Carousel>

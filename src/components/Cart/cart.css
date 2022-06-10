@@ -40,6 +40,16 @@
 
 }
 
+.cart .order{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.order .trash{
+    font-size: 25px;
+    margin-right: 10px;
+    color: rgb(196, 53, 43);
+}
 
 
 @media (max-width:600px) {
