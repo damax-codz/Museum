@@ -4,14 +4,15 @@ import Nav from '../Navbar/Nav'
 import './ticket.css' 
 
 const Ticket = () => {
-    const [ adult,setAdult ]  = useState(0)
-    const [ senior,setSenior ]  = useState(0)
-    const [ student,setStudent ]  = useState(0)
-    const [ date,setDate ] = useState(day)
-
     let dat = new Date()
     let day = dat.getDate()
 
+    const [ adult,setAdult ]  = useState(0)
+    const [ senior,setSenior ]  = useState(0)
+    const [ student,setStudent ]  = useState(0)
+    const [ date,setDate ] = useState(day+1)
+
+   
     function increaseAdult(){
         setAdult( adult+1 )
     }
@@ -43,7 +44,7 @@ const Ticket = () => {
        now.style.borderBottom = '2px solid rgba(255, 71, 58, 1)'
        next.style.borderBottom = 'none'
        future.style.borderBottom = 'none'
-       setDate(21)
+       setDate(date-1)
 
        now.style.fontSize = '25px'
        next.style.fontSize='20px'
@@ -61,7 +62,7 @@ const Ticket = () => {
         next.style.borderBottom = '2px solid rgba(255, 71, 58, 1)'
         now.style.borderBottom = 'none'
         future.style.borderBottom = 'none'
-        setDate(22)
+        setDate(date)
 
         next.style.fontSize = '25px'
         now.style.fontSize='20px'
@@ -80,7 +81,7 @@ const Ticket = () => {
         future.style.borderBottom = '2px solid rgba(255, 71, 58, 1)'
         next.style.borderBottom = 'none'
         now.style.borderBottom = 'none'
-        setDate(23)
+        setDate(date+1)
         
         future.style.fontSize = '25px'
         next.style.fontSize='20px'
